@@ -43,9 +43,9 @@
             register(user) {
                 this.$http.post('participants', user)
                     .then(response => {
-                        // udało się
+                        alert("Udało się!");
                     })
-                    .catch(response => { // nie udalo sie
+                    .catch(response => { alert("nie udalo sie! Status: " + response.status)
                     });
             }
         }
